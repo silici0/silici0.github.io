@@ -100,7 +100,6 @@ function renderProjects() {
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="project-card-arrow"><path d="M7 17L17 7M10 7h7v7"/></svg>
       </div>
       <p>${p.description}</p>
-      <p class="project-result">⚡ ${p.result}</p>
       <div class="project-tags">${p.stack.map(s => `<span>${s}</span>`).join('')}</div>
       <a href="${p.url}" target="_blank" rel="noopener" class="project-link">visitar projeto →</a>
     </article>
@@ -119,7 +118,6 @@ function renderFreelance() {
         <span class="freelance-badge">freelance</span>
       </div>
       <p>${p.description}</p>
-      <p class="project-result">⚡ ${p.result}</p>
       <div class="project-tags">${p.stack.map(s => `<span>${s}</span>`).join('')}</div>
       <a href="${p.url}" target="_blank" rel="noopener" class="project-link">visitar site →</a>
     </article>
