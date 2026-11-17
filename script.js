@@ -48,6 +48,30 @@ const projects = [
   },
 ];
 
+const personalProjects = [
+  {
+    name: "Calculadora de Férias",
+    url: "https://silici0.github.io/calculadora-de-ferias/",
+    stack: ["Android", "CLT", "Finanças pessoais"],
+    description: "Simule férias, abono pecuniário e adiantamento do 13º salário com estimativa de INSS e IRRF. Os cálculos são feitos no dispositivo.",
+    result: "Disponível no Google Play",
+  },
+  {
+    name: "Galaxy Pinball",
+    url: "https://silici0.github.io/galaxy-pinball/",
+    stack: ["Android", "Arcade", "Godot"],
+    description: "Um arcade espacial de uma mão só: lance a sonda, ricocheteie pelos bouncers e tente superar sua maior distância.",
+    result: "Disponível no Google Play",
+  },
+  {
+    name: "Lista de Compras por Voz",
+    url: "https://silici0.github.io/lista-compras-por-voz/",
+    stack: ["Android", "Produtividade", "Comando de voz"],
+    description: "Aplicativo Android para organizar listas de compras e adicionar itens usando a voz.",
+    result: "Disponível no Google Play",
+  },
+];
+
 const freelance = [
   {
     name: "Aplam",
@@ -91,9 +115,8 @@ const experience = [
 // ===== Render Projects =====
 function renderProjects() {
   const grid = document.querySelector('.projects-grid');
-  if (!grid) return;
-
-  grid.innerHTML = projects.map(p => `
+  const personalGrid = document.querySelector('.personal-projects-grid');
+  const renderCards = items => items.map(p => `
     <article class="project-card">
       <div class="project-card-header">
         <h3><a href="${p.url}" target="_blank" rel="noopener">${p.name}</a></h3>
@@ -104,6 +127,9 @@ function renderProjects() {
       <a href="${p.url}" target="_blank" rel="noopener" class="project-link">visitar projeto →</a>
     </article>
   `).join('');
+
+  if (grid) grid.innerHTML = renderCards(projects);
+  if (personalGrid) personalGrid.innerHTML = renderCards(personalProjects);
 }
 
 // ===== Render Freelance =====

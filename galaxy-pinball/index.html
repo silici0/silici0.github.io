@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galaxy Pinball: lance sua sonda pelo espaço, use os bouncers e tente alcançar a maior distância neste arcade Android gratuito." />
+  <meta name="theme-color" content="#070b1b" />
+  <title>Galaxy Pinball — Arcade espacial para Android</title>
+  <link rel="canonical" href="https://silici0.github.io/galaxy-pinball/" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .pinball-page { --space: #070b1b; --space-card: #10172b; min-height: calc(100vh - 160px); background: radial-gradient(ellipse at 72% 12%, #182e5b 0, transparent 38%), radial-gradient(ellipse at 22% 38%, #241a4a 0, transparent 35%); }
+    .pinball-hero { max-width: 72rem; margin: 0 auto; padding: 6.5rem 1.5rem 4rem; display: grid; grid-template-columns: 1fr 18rem; gap: 3rem; align-items: center; }
+    .pinball-kicker { color: #a9c6ff; font: 500 .8rem var(--font-mono); margin-bottom: 1.25rem; }
+    .pinball-title { max-width: 48rem; font-size: clamp(2.8rem, 7vw, 5.6rem); line-height: .98; letter-spacing: -.045em; }
+    .pinball-title span { color: #f4c95d; }
+    .pinball-lede { max-width: 42rem; margin-top: 1.5rem; color: #c2cbe1; font-size: 1.15rem; }
+    .pinball-actions { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: .8rem; }
+    .pinball-play { background: #f4c95d; color: #181522; box-shadow: 0 0 30px #f4c95d40; }
+    .pinball-play:hover { color: #181522; filter: brightness(1.08); }
+    .pinball-icon { width: 100%; max-width: 18rem; border-radius: 2rem; border: 1px solid #ffffff22; box-shadow: 0 24px 80px #020513aa; }
+    .pinball-content { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+    .pinball-world { margin-bottom: 3rem; }
+    .pinball-screenshots { margin-bottom: 3rem; }
+    .pinball-screenshots h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+    .pinball-screenshot-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .pinball-screenshot { overflow: hidden; border: 1px solid #ffffff20; border-radius: var(--radius); background: #10172bdd; }
+    .pinball-screenshot img { display: block; width: 100%; height: auto; }
+    .pinball-screenshot figcaption { padding: .75rem 1rem; color: #c2cbe1; font-size: .9rem; }
+    .pinball-world h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+    .pinball-world-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .pinball-world-card { overflow: hidden; border: 1px solid #ffffff20; border-radius: var(--radius); background: #10172bdd; }
+    .pinball-world-card img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+    .pinball-world-card figcaption { padding: .75rem 1rem; color: #c2cbe1; font-size: .9rem; }
+    .pinball-features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .pinball-card { padding: 1.5rem; border: 1px solid #ffffff20; border-radius: var(--radius); background: #10172bdd; }
+    .pinball-card h2 { font-size: 1.05rem; margin-bottom: .5rem; }
+    .pinball-card p { color: #b6c0d8; font-size: .95rem; }
+    .pinball-legal { margin-top: 2rem; padding: 1.5rem; border-left: 2px solid #f4c95d; background: #10172bdd; }
+    .pinball-legal h2 { font-size: 1.1rem; margin-bottom: .4rem; }
+    .pinball-legal p { color: #b6c0d8; margin-top: .5rem; }
+    .pinball-footer { border-top: 1px solid #ffffff20; padding: 1.5rem; color: #b6c0d8; font-size: .85rem; }
+    .pinball-footer-inner { max-width: 72rem; margin: 0 auto; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    @media (max-width: 700px) { .pinball-hero { padding-top: 4rem; grid-template-columns: 1fr; text-align: center; gap: 2rem; } .pinball-icon { width: 11rem; margin: 0 auto; grid-row: 1; } .pinball-actions { justify-content: center; } .pinball-features, .pinball-world-grid, .pinball-screenshot-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="pinball-page">
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="../" class="nav-logo" aria-label="Rafael Cunha, página inicial"><span class="nav-logo-dollar">$</span><span class="nav-logo-name">rafael.cunha</span><span class="nav-logo-cursor">_</span></a>
+        <a class="btn-outline" href="../">Voltar ao site</a>
+      </div>
+    </header>
+    <main>
+      <section class="pinball-hero">
+        <div>
+          <p class="pinball-kicker">// arcade espacial · Android</p>
+          <h1 class="pinball-title">Cada quique conta. <span>Vá mais longe.</span></h1>
+          <p class="pinball-lede">Puxe o estilingue e lance sua sonda em um campo infinito de bouncers. Mire, use seus impulsos no momento certo e supere seu recorde em Galaxy Pinball.</p>
+          <div class="pinball-actions">
+            <a class="btn-primary pinball-play" href="https://play.google.com/store/apps/details?id=com.galaxypinball.game" target="_blank" rel="noopener noreferrer">Jogar no Google Play ↗</a>
+            <a class="btn-outline" href="mailto:galaxypinball.app@proton.me?subject=Galaxy%20Pinball">Contato e suporte</a>
+          </div>
+        </div>
+        <img class="pinball-icon" src="images/galaxy-pinball-icon.png" alt="Ícone do jogo Galaxy Pinball: uma esfera azul em trajetória pelo espaço" width="512" height="512" fetchpriority="high" />
+      </section>
+      <section class="pinball-content" aria-label="Recursos do jogo">
+        <section class="pinball-screenshots" aria-labelledby="screenshots-title">
+          <h2 id="screenshots-title">Capturas do jogo</h2>
+          <div class="pinball-screenshot-grid">
+            <figure class="pinball-screenshot"><img src="https://play-lh.googleusercontent.com/3-4_q1HYJvUwKdJtYRQUuVzjthx0XiD3P2HpP9R3reRyJ50c2tRk4ezGJOVFsNtZAh7NsOzubDaxKAghVafSHw=w526-h296" alt="Captura oficial de Galaxy Pinball na Google Play" width="526" height="296" loading="lazy" referrerpolicy="no-referrer" /><figcaption>Gameplay de Galaxy Pinball</figcaption></figure>
+            <figure class="pinball-screenshot"><img src="https://play-lh.googleusercontent.com/QhHgigrvWLZPenlNiJCjicBHxxDItL981TxwyMPtmd-WeRGVRKzBB1-ibqxY_gm9bEwulA9FOqDWxow5olHEhQ=w526-h296" alt="Outra captura oficial de Galaxy Pinball na Google Play" width="526" height="296" loading="lazy" referrerpolicy="no-referrer" /><figcaption>Explore o campo infinito de bouncers</figcaption></figure>
+          </div>
+        </section>
+        <section class="pinball-world" aria-labelledby="world-title">
+          <h2 id="world-title">Quatro regiões do espaço</h2>
+          <div class="pinball-world-grid">
+            <figure class="pinball-world-card"><img src="images/q1_fundo.png" alt="Arte de fundo do primeiro quadrante de Galaxy Pinball" width="1376" height="768" loading="lazy" /><figcaption>Quadrante 1</figcaption></figure>
+            <figure class="pinball-world-card"><img src="images/q2_fundo.png" alt="Arte de fundo do segundo quadrante de Galaxy Pinball" width="1376" height="768" loading="lazy" /><figcaption>Quadrante 2</figcaption></figure>
+            <figure class="pinball-world-card"><img src="images/q3_fundo.png" alt="Arte de fundo do terceiro quadrante de Galaxy Pinball" width="1408" height="768" loading="lazy" /><figcaption>Quadrante 3</figcaption></figure>
+            <figure class="pinball-world-card"><img src="images/q4_fundo.png" alt="Arte de fundo do quarto quadrante de Galaxy Pinball" width="1408" height="768" loading="lazy" /><figcaption>Quadrante 4</figcaption></figure>
+          </div>
+        </section>
+        <div class="pinball-features">
+          <article class="pinball-card"><h2>Um dedo, um lançamento</h2><p>Escolha ângulo e força no estilingue. Depois solte e acompanhe a sonda atravessar o espaço.</p></article>
+          <article class="pinball-card"><h2>Quatro quadrantes</h2><p>Explore um campo procedural que fica mais denso e imprevisível conforme você sobe.</p></article>
+          <article class="pinball-card"><h2>Impulsos e melhorias</h2><p>Use o Jato no ar, ative a Supernova diária e gaste Dust para melhorar sua próxima corrida.</p></article>
+          <article class="pinball-card"><h2>Jogue offline</h2><p>Sem conta, cadastro ou login. Jogue em inglês ou português, mesmo sem conexão.</p></article>
+          <article class="pinball-card"><h2>Supere sua distância</h2><p>Quiques consomem energia. Planeje sua trajetória e tente chegar mais longe a cada partida.</p></article>
+          <article class="pinball-card"><h2>Vídeos opcionais</h2><p>O jogo é gratuito e oferece anúncios de vídeo premiados opcionais para dobrar a recompensa de uma corrida.</p></article>
+        </div>
+        <aside class="pinball-legal">
+          <h2>Privacidade e termos</h2>
+          <p>O progresso e as configurações ficam no dispositivo. O jogo usa anúncios opcionais via Google AdMob e estatísticas anônimas via GameAnalytics, conforme detalhado na política.</p>
+          <p><a href="../game-pinball-privacy/">Leia a Política de Privacidade</a> · <a href="termos-de-uso/">Leia os Termos de Uso</a></p>
+        </aside>
+      </section>
+    </main>
+    <footer class="pinball-footer"><div class="pinball-footer-inner"><span>© 2026 Rafael Silva da Cunha</span><a href="../">silici0.github.io</a></div></footer>
+  </div>
+</body>
+</html>

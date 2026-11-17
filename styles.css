@@ -419,6 +419,8 @@ img { max-width: 100%; display: block; }
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
+.personal-projects-heading { margin-top: 4rem; }
+
 .project-card {
   position: relative;
   display: flex;

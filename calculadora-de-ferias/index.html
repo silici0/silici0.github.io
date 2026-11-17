@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Calculadora de Férias: estime férias CLT, abono pecuniário, adiantamento do 13º, INSS e IRRF. Os cálculos são feitos no seu dispositivo." />
+  <meta name="theme-color" content="#142c48" />
+  <title>Calculadora de Férias — Simulação CLT | Rafael Cunha</title>
+  <link rel="canonical" href="https://silici0.github.io/calculadora-de-ferias/" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .vacation-page { min-height: calc(100vh - 160px); }
+    .vacation-hero { max-width: 72rem; margin: 0 auto; padding: 6rem 1.5rem 4.5rem; display: grid; grid-template-columns: 1fr 16rem; align-items: center; gap: 3rem; }
+    .vacation-kicker { color: var(--primary); font: 500 .8rem var(--font-mono); margin-bottom: 1.25rem; }
+    .vacation-title { max-width: 48rem; font-size: clamp(2.7rem, 7vw, 5.2rem); line-height: 1; letter-spacing: -.045em; }
+    .vacation-title span { color: #69aaf5; }
+    .vacation-lede { max-width: 43rem; margin-top: 1.5rem; color: var(--muted-foreground); font-size: 1.1rem; }
+    .vacation-actions { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: .8rem; }
+    .vacation-icon { width: 16rem; height: 16rem; aspect-ratio: 1 / 1; object-fit: contain; padding: 2rem; border-radius: 50%; border: 1px solid var(--border); background: #e6f4fe; box-shadow: 0 24px 70px #07172b66; justify-self: center; }
+    .vacation-content { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+    .vacation-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .vacation-card { padding: 1.5rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
+    .vacation-card h2 { font-size: 1.05rem; margin-bottom: .5rem; }
+    .vacation-card p { color: var(--muted-foreground); font-size: .95rem; }
+    .vacation-notice { margin-top: 2rem; padding: 1.5rem; border-left: 2px solid #f0c36d; background: var(--card); }
+    .vacation-notice h2 { font-size: 1.1rem; margin-bottom: .4rem; }
+    .vacation-notice p { color: var(--muted-foreground); }
+    .vacation-sources { margin-top: 1rem; padding: 1.5rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
+    .vacation-sources h2 { font-size: 1.1rem; margin-bottom: .5rem; }
+    .vacation-sources p, .vacation-sources li { color: var(--muted-foreground); }
+    .vacation-sources ul { padding-left: 1.2rem; margin-top: .5rem; }
+    .vacation-sources li { margin: .4rem 0; }
+    .vacation-legal { margin-top: 1.5rem; padding: 1.5rem; border: 1px solid var(--border); border-radius: var(--radius); }
+    .vacation-legal h2 { font-size: 1.1rem; margin-bottom: .4rem; }
+    .vacation-legal p { color: var(--muted-foreground); margin-top: .5rem; }
+    .vacation-footer { border-top: 1px solid var(--border); padding: 1.5rem; color: var(--muted-foreground); font-size: .85rem; }
+    .vacation-footer-inner { max-width: 72rem; margin: 0 auto; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    @media (max-width: 700px) { .vacation-hero { padding-top: 4rem; grid-template-columns: 1fr; text-align: center; gap: 2rem; } .vacation-icon { width: 11rem; height: 11rem; margin: 0 auto; grid-row: 1; } .vacation-actions { justify-content: center; } .vacation-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="navbar"><div class="nav-container"><a href="../" class="nav-logo" aria-label="Rafael Cunha, página inicial"><span class="nav-logo-dollar">$</span><span class="nav-logo-name">rafael.cunha</span><span class="nav-logo-cursor">_</span></a><a class="btn-outline" href="../">Voltar ao site</a></div></header>
+  <main class="vacation-page">
+    <section class="vacation-hero">
+      <div>
+        <p class="vacation-kicker">// aplicativo Android · finanças e trabalho</p>
+        <h1 class="vacation-title">Planeje suas férias com <span>mais clareza.</span></h1>
+        <p class="vacation-lede">Simule quanto pode receber nas férias CLT, com os adicionais e descontos do cenário informado. Os cálculos acontecem no próprio dispositivo; seus valores salariais não são enviados pelo app.</p>
+        <div class="vacation-actions">
+          <a class="btn-primary" href="https://play.google.com/store/apps/details?id=br.com.toolboxbrasil.calculadoradeferias" target="_blank" rel="noopener noreferrer">Ver no Google Play ↗</a>
+          <a class="btn-outline" href="mailto:contato@toolboxbrasil.com.br?subject=Calculadora%20de%20F%C3%A9rias">Suporte</a>
+        </div>
+      </div>
+      <img class="vacation-icon" src="images/calculadora-de-ferias-foreground.png" alt="Símbolo da Calculadora de Férias" width="1024" height="1024" fetchpriority="high" />
+    </section>
+    <section class="vacation-content" aria-label="Recursos do aplicativo">
+      <div class="vacation-grid">
+        <article class="vacation-card"><h2>Simule o pagamento</h2><p>Informe salário bruto, dias de férias, dependentes e outros dados do cenário para estimar o valor líquido.</p></article>
+        <article class="vacation-card"><h2>Inclua adicionais</h2><p>Considere abono pecuniário pela venda de dias, média de remuneração variável e adiantamento da primeira parcela do 13º salário.</p></article>
+        <article class="vacation-card"><h2>Veja os descontos</h2><p>Consulte o detalhamento de INSS e IRRF aplicado ao cenário, com referência às tabelas e fontes oficiais.</p></article>
+      </div>
+      <aside class="vacation-notice">
+        <h2>Aviso: aplicativo independente</h2>
+        <p>Este aplicativo não é oficial e não representa o Governo Federal, o Ministério do Trabalho, o INSS ou a Receita Federal. Os resultados são estimativas informativas e não substituem cálculo oficial, orientação jurídica, contábil ou de profissionais de folha de pagamento.</p>
+      </aside>
+      <section class="vacation-sources" aria-labelledby="official-sources-title">
+        <h2 id="official-sources-title">Fontes oficiais consultadas</h2>
+        <p>Consulte os textos oficiais usados como referência para regras trabalhistas e tabelas:</p>
+        <ul>
+          <li><a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm" target="_blank" rel="noopener noreferrer">CLT — Decreto-Lei nº 5.452/1943 (Planalto)</a></li>
+          <li><a href="https://www.gov.br/inss/pt-br/direitos-e-deveres/inscricao-e-contribuicao/tabela-de-contribuicao-mensal" target="_blank" rel="noopener noreferrer">INSS — Tabela de contribuição mensal</a></li>
+          <li><a href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas" target="_blank" rel="noopener noreferrer">Receita Federal — Tabelas do Imposto de Renda</a></li>
+          <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15270.htm" target="_blank" rel="noopener noreferrer">Lei nº 15.270/2025 — alterações do Imposto de Renda</a></li>
+          <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/D12797.htm" target="_blank" rel="noopener noreferrer">Decreto nº 12.797/2025 — salário mínimo</a></li>
+        </ul>
+        <p>O app é independente e não é afiliado nem endossado por esses órgãos. As fontes são referências; os resultados do app são estimativas.</p>
+      </section>
+      <aside class="vacation-legal">
+        <h2>Privacidade e termos</h2>
+        <p>Os dados inseridos para calcular férias são processados localmente. O aplicativo exibe anúncios e o SDK do Google AdMob pode tratar dados técnicos e de publicidade, conforme detalhado na política.</p>
+        <p><a href="privacidade/">Leia a Política de Privacidade</a> · <a href="termos-de-uso/">Leia os Termos de Uso</a></p>
+        <p>Suporte: <a href="mailto:contato@toolboxbrasil.com.br">contato@toolboxbrasil.com.br</a>.</p>
+      </aside>
+    </section>
+  </main>
+  <footer class="vacation-footer"><div class="vacation-footer-inner"><span>© 2026 Rafael Silva da Cunha</span><a href="../">silici0.github.io</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lista por Voz: organize compras por voz, acompanhe gastos e compartilhe listas em tempo real. Disponível para Android." />
+  <meta name="theme-color" content="#101820" />
+  <title>Lista por Voz — Lista de Compras Inteligente | Rafael Cunha</title>
+  <link rel="canonical" href="https://silici0.github.io/lista-compras-por-voz/" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .app-page { min-height: calc(100vh - 160px); }
+    .app-hero { max-width: 72rem; margin: 0 auto; padding: 7rem 1.5rem 5rem; }
+    .app-feature-image { width: 100%; height: auto; margin-top: 3rem; border-radius: 1rem; border: 1px solid var(--border); }
+    .app-kicker { color: var(--primary); font: 500 .8rem var(--font-mono); margin-bottom: 1.25rem; }
+    .app-title { max-width: 52rem; font-size: clamp(2.7rem, 7vw, 5.5rem); line-height: 1.02; letter-spacing: -.045em; }
+    .app-title span { color: var(--primary); }
+    .app-lede { max-width: 40rem; margin-top: 1.5rem; color: var(--muted-foreground); font-size: 1.15rem; }
+    .app-actions { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: .8rem; }
+    .app-details { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+    .app-details-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .app-detail { padding: 1.5rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
+    .app-detail h2 { font-size: 1.05rem; margin-bottom: .5rem; }
+    .app-detail p { color: var(--muted-foreground); font-size: .95rem; }
+    .app-legal { margin-top: 2rem; padding: 1.5rem; border-left: 2px solid var(--primary); background: oklch(0.19 0.02 250 / .7); }
+    .app-legal h2 { font-size: 1.1rem; margin-bottom: .4rem; }
+    .app-legal p { color: var(--muted-foreground); }
+    .app-gallery { margin-top: 3rem; }
+    .app-gallery h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+    .app-shots { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(220px, 28%); gap: 1rem; overflow-x: auto; padding: .25rem .1rem 1rem; scroll-snap-type: x mandatory; }
+    .app-shot { scroll-snap-align: start; }
+    .app-shot img { width: 100%; height: auto; border-radius: .8rem; border: 1px solid var(--border); }
+    .app-shot figcaption { color: var(--muted-foreground); font-size: .85rem; margin-top: .5rem; }
+    .app-footer { border-top: 1px solid var(--border); padding: 1.5rem; color: var(--muted-foreground); font-size: .85rem; }
+    .app-footer-inner { max-width: 72rem; margin: 0 auto; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    @media (max-width: 700px) { .app-hero { padding-top: 4rem; } .app-details-grid { grid-template-columns: 1fr; } .app-shots { grid-auto-columns: minmax(200px, 72%); } }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="../" class="nav-logo" aria-label="Rafael Cunha, página inicial"><span class="nav-logo-dollar">$</span><span class="nav-logo-name">rafael.cunha</span><span class="nav-logo-cursor">_</span></a>
+      <a class="btn-outline" href="../">Voltar ao site</a>
+    </div>
+  </header>
+  <main class="app-page">
+    <section class="app-hero">
+      <p class="app-kicker">// Voice Shopping List · Android · Compras</p>
+      <h1 class="app-title">Sua compra, <span>na sua voz.</span></h1>
+      <p class="app-lede">Crie listas falando, acompanhe o total do carrinho e compartilhe as compras com quem vai ao mercado com você. Sem cadastro obrigatório.</p>
+      <div class="app-actions">
+        <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.silici0.listacompra" target="_blank" rel="noopener noreferrer">Ver no Google Play ↗</a>
+        <a class="btn-outline" href="mailto:silici0@gmail.com?subject=Lista%20de%20Compras%20por%20Voz">Falar com o desenvolvedor</a>
+      </div>
+      <img class="app-feature-image" src="images/feature-pt-BR.png" alt="Lista de Compras por Voz: fale a lista, some no mercado e controle o limite de gasto" width="1024" height="500" fetchpriority="high" />
+    </section>
+    <section class="app-details" aria-label="Informações do aplicativo">
+      <div class="app-details-grid">
+        <article class="app-detail"><h2>Fale sua lista</h2><p>Dite vários produtos e quantidades de uma vez. No mercado, use o modo segurar para falar, pensado para ambientes barulhentos.</p></article>
+        <article class="app-detail"><h2>Acompanhe os gastos</h2><p>Marque itens, informe preços por voz e veja o total do carrinho. Defina um orçamento e acompanhe seus gastos durante a compra.</p></article>
+        <article class="app-detail"><h2>Compre em conjunto</h2><p>Compartilhe uma lista por link e acompanhe as alterações em tempo real. Suas listas escolhidas para compartilhar são sincronizadas.</p></article>
+        <article class="app-detail"><h2>Reutilize compras</h2><p>Consulte o histórico, acompanhe gastos mensais e crie uma nova lista com base em compras anteriores.</p></article>
+        <article class="app-detail"><h2>Organize do seu jeito</h2><p>Crie várias listas para supermercado, feira, churrasco e outras necessidades.</p></article>
+        <article class="app-detail"><h2>Use no seu idioma</h2><p>Disponível em português, inglês e espanhol, com opções de moedas e medidas internacionais.</p></article>
+      </div>
+      <section class="app-gallery" aria-labelledby="screenshots-title">
+        <h2 id="screenshots-title">Veja o app por dentro</h2>
+        <div class="app-shots">
+          <figure class="app-shot"><img src="images/pt-1-inicio.png" alt="Tela inicial do Lista por Voz" width="1080" height="1920" loading="lazy" /><figcaption>Comece sua lista</figcaption></figure>
+          <figure class="app-shot"><img src="images/pt-2-lista.png" alt="Lista de produtos com entrada por voz" width="1080" height="1920" loading="lazy" /><figcaption>Adicione itens por voz</figcaption></figure>
+          <figure class="app-shot"><img src="images/pt-3-mercado.png" alt="Modo supermercado para marcar itens comprados" width="1080" height="1920" loading="lazy" /><figcaption>Marque compras e preços</figcaption></figure>
+          <figure class="app-shot"><img src="images/pt-4-alerta.png" alt="Tela de orçamento e alerta de gastos" width="1080" height="1920" loading="lazy" /><figcaption>Acompanhe seu orçamento</figcaption></figure>
+          <figure class="app-shot"><img src="images/pt-5-historico.png" alt="Histórico de compras e gastos" width="1080" height="1920" loading="lazy" /><figcaption>Consulte o histórico</figcaption></figure>
+          <figure class="app-shot"><img src="images/pt-6-config.png" alt="Configurações de idioma, moeda e medidas" width="1080" height="1920" loading="lazy" /><figcaption>Configure idioma e moeda</figcaption></figure>
+        </div>
+      </section>
+      <aside class="app-legal">
+        <h2>Privacidade e condições de uso</h2>
+        <p>As listas ficam no dispositivo; somente listas escolhidas para compartilhamento são sincronizadas. O app contém anúncios e a ficha da Google Play informa coleta e compartilhamento de categorias de dados, incluindo localização e atividade no app.</p>
+        <p><a href="privacidade/">Leia a Política de Privacidade</a> · <a href="termos-de-uso/">Leia os Termos de Uso</a></p>
+        <p>Dúvidas ou solicitações: <a href="mailto:silici0@gmail.com">silici0@gmail.com</a>.</p>
+      </aside>
+    </section>
+  </main>
+  <footer class="app-footer"><div class="app-footer-inner"><span>© 2026 Rafael Cunha</span><a href="../">silici0.github.io</a></div></footer>
+</body>
+</html>
