@@ -64,6 +64,13 @@ const personalProjects = [
     result: "Disponível no Google Play",
   },
   {
+    name: "Prisma Rush",
+    url: "https://silici0.github.io/prisma-rush/",
+    stack: ["Android", "Arcade", "Reflexo"],
+    description: "Arcade de reflexo e escolha: coma as peças da sua cor, desvie do resto e atravesse 100 fases com portas de duas cores e diamantes escondidos.",
+    result: "Em breve no Google Play",
+  },
+  {
     name: "Lista de Compras por Voz",
     url: "https://silici0.github.io/lista-compras-por-voz/",
     stack: ["Android", "Produtividade", "Comando de voz"],
